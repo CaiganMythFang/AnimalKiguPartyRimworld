@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>TFBKigurumiClothing</defName>
+    <label>kigurumi crafting</label>
+    <description>Allows you to craft animal pajamas called Kigurumis. [Animal Kigurumi Party]</description>
+    <baseCost>250</baseCost>
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+</Defs>

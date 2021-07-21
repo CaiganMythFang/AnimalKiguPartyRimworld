@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+    	<!-- Red Panda - Stuffless -->
+
+  <ThingDef ParentName="TFBKigurumiHatMakeableStuffless">
+    <defName>Apparel_TFBDragonKiguHood</defName>
+    <label>Dragon Kigu Hood</label>
+    <description>A Dragon Kigu Hood.
+    
+    Ancient, mystical, noble, and strange creatures. Dragons come in a wide variety of types, from fire red to water blue to mysterious purple, each with its own powers and elements.
+    
+    Dragons are known to collect and hoard a variety of things, but seem to be predominantly interested in shiny gold and gems, as well as young maidens and princesses.
+    
+    They also don't care what you think. They are dragons.
+    
+    [Animal Kigurumi Party]</description>
+    <graphicData>
+      <texPath>Apparel/Hoods/DragonKiguHood</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <recipeMaker>
+      <recipeUsers>
+			<li>HandKiguWorktable</li>
+			<li>ElectricKiguWorktable</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+		<Cloth>25</Cloth>
+	</costList>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.1</Mass>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.02</ArmorRating_Heat>
+      <Insulation_Cold>14</Insulation_Cold>
+      <Insulation_Heat>1.5</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Hoods/DragonKiguHood</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>Tribal</li>
+		<li>Outlander</li>
+		<li>Neolithic</li>
+		<li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <generateAllowChance>.075</generateAllowChance>
+  </ThingDef>  
+
+  <ThingDef ParentName="TFBKigurumiApparelMakeableStuffless">
+    <defName>Apparel_TFBDragonKiguBody</defName>
+    <label>Dragon Kigu Pajamas</label>
+    <description>Dragon Kigu Pajamas. 
+    
+    Ancient, mystical, noble, and strange creatures. Dragons come in a wide variety of types, from fire red to water blue to mysterious purple, each with its own powers and elements.
+    
+    Dragons are known to collect and hoard a variety of things, but seem to be predominantly interested in shiny gold and gems, as well as young maidens and princesses. 
+    
+    They also don't care what you think. They are dragons.
+    
+    [Animal Kigurumi Party]</description>
+    <graphicData>
+      <texPath>Apparel/Body/DragonKigu</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <recipeMaker>
+      <recipeUsers>
+			<li>HandKiguWorktable</li>
+			<li>ElectricKiguWorktable</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+		<Cloth>100</Cloth>
+	</costList>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>4.2</Mass>
+      <ArmorRating_Blunt>0.045</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.21</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>55</Insulation_Cold>
+      <Insulation_Heat>1.5</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+		<li>Torso</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Body/DragonKigu</wornGraphicPath>
+      <layers>
+		<li>Shell</li>
+      </layers>
+      <tags>
+        <li>Tribal</li>
+		<li>Outlander</li>
+		<li>Neolithic</li>
+		<li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <generateAllowChance>.075</generateAllowChance>
+  </ThingDef>
+  
+    	<!-- Red Panda - Stuffed -->
+
+  <ThingDef ParentName="TFBKigurumiHatMakeableBase">
+    <defName>Apparel_TFBDragonKiguHoodBlank</defName>
+    <label>Dragon Kigu Hood(tinted)</label>
+    <description>A Dragon Kigu Hood, tinted by its material.
+    
+    Ancient, mystical, noble, and strange creatures. Dragons come in a wide variety of types, from fire red to water blue to mysterious purple, each with its own powers and elements.
+    
+    Dragons are known to collect and hoard a variety of things, but seem to be predominantly interested in shiny gold and gems, as well as young maidens and princesses.
+    
+    They also don't care what you think. They are dragons.
+    
+    [Animal Kigurumi Party]</description>
+    <graphicData>
+      <texPath>Apparel/Hoods/DragonKiguHoodBlank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <recipeMaker>
+      <recipeUsers>
+			<li>HandKiguWorktable</li>
+			<li>ElectricKiguWorktable</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.2</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.85</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Hoods/DragonKiguHoodBlank</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>Tribal</li>
+		<li>Outlander</li>
+		<li>Neolithic</li>
+		<li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <generateAllowChance>.075</generateAllowChance>
+  </ThingDef>
+  
+    <ThingDef ParentName="TFBKigurumiApparelMakeableBase">
+    <defName>Apparel_TFBDragonKiguBodyBlank</defName>
+    <label>Dragon Kigu Pajamas (tinted)</label>
+    <description>Dragon Kigu Pajamas, tinted by its material.
+    
+    Ancient, mystical, noble, and strange creatures. Dragons come in a wide variety of types, from fire red to water blue to mysterious purple, each with its own powers and elements.
+    
+    Dragons are known to collect and hoard a variety of things, but seem to be predominantly interested in shiny gold and gems, as well as young maidens and princesses.
+    
+    They also don't care what you think. They are dragons.
+    
+    [Animal Kigurumi Party]</description>
+    <graphicData>
+      <texPath>Apparel/Body/DragonKiguBlank</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <recipeMaker>
+      <recipeUsers>
+			<li>HandKiguWorktable</li>
+			<li>ElectricKiguWorktable</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>2.0</Mass>
+      <StuffEffectMultiplierArmor>0.22</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.8</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.05</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+		<li>Torso</li>
+		<li>Shoulders</li>
+		<li>Arms</li>
+		<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Body/DragonKiguBlank</wornGraphicPath>
+      <layers>
+		<li>Shell</li>
+      </layers>
+      <tags>
+        <li>Tribal</li>
+		<li>Outlander</li>
+		<li>Neolithic</li>
+		<li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+		<li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <generateAllowChance>.075</generateAllowChance>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- normal bases -->
+
+	<ThingDef Name="TFBKigurumiApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+      		<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef Name="TFBKigurumiApparelMakeableBase" ParentName="TFBKigurumiApparelBase" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>HandKiguWorktable</li>
+        <li>ElectricKiguWorktable</li>
+      </recipeUsers>
+		<researchPrerequisite>TFBKigurumiClothing</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+    <statBases>
+      <MarketValue>280</MarketValue>
+    </statBases>
+	<thingCategories>
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+
+	<ThingDef Name="TFBKigurumiHatMakeableBase" ParentName="TFBKigurumiApparelMakeableBase" Abstract="True">
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+    <statBases>
+      <MarketValue>70</MarketValue>
+    </statBases>
+	</ThingDef>
+
+	<ThingDef Name="TFBKigurumiArmorMakeableBase" ParentName="TFBKigurumiApparelBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="TFBKigurumiArmorHelmetMakeableBase" ParentName="TFBKigurumiArmorMakeableBase" Abstract="True">
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+	</ThingDef>
+
+    	<!-- stuffless bases -->
+        
+        	<ThingDef Name="TFBKigurumiApparelStuffless" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+      		<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef Name="TFBKigurumiApparelMakeableStuffless" ParentName="TFBKigurumiApparelStuffless" Abstract="True">
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Tailor</effectWorking>
+      <soundWorking>Recipe_Tailor</soundWorking>
+      <recipeUsers>
+        <li>HandKiguWorktable</li>
+        <li>ElectricKiguWorktable</li>
+      </recipeUsers>
+		<researchPrerequisite>TFBKigurumiClothing</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+    </recipeMaker>
+	<thingCategories>
+		<li>Apparel</li>
+	</thingCategories>
+  </ThingDef>
+
+	<ThingDef Name="TFBKigurumiHatMakeableStuffless" ParentName="TFBKigurumiApparelMakeableStuffless" Abstract="True">
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="TFBKigurumiArmorMakeableStuffless" ParentName="TFBKigurumiApparelStuffless" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>SmithingSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+	<thingCategories>
+		<li>Apparel</li>
+	</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="TFBKigurumiArmorHelmetMakeableStuffless" ParentName="TFBKigurumiArmorMakeableStuffless" Abstract="True">
+		<thingCategories>
+			<li>Headgear</li>
+		</thingCategories>
+	</ThingDef>
+    
+</Defs>
